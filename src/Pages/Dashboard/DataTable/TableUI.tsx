@@ -7,7 +7,14 @@ import {
   usePagination,
 } from 'react-table';
 import {DocumentData} from 'firebase/firestore';
-import {UpArrowIcon, DownArrowIcon} from '../../../Components/Icons';
+import {
+  UpArrowIcon,
+  DownArrowIcon,
+  ArrowDoubleLeftIcon,
+  ArrowDoubleRightIcon,
+  ArrowLeftIcon,
+  ArrowRightIcon,
+} from '../../../Components/Icons';
 
 import EditUserModal from './EditUserModal';
 import DeleteUserModal from './DeleteUserModal';
@@ -111,13 +118,14 @@ const TableUI = ({usersData}: {usersData: DocumentData[]}) => {
             disabled={!canPreviousPage}
             className="rounded-md p-2  border border-gray-300 hover:bg-gray-200 active:bg-gray-400 disabled:bg-gray-300 mr-2"
           >
-            {'<<'}
+            <ArrowDoubleLeftIcon />
           </button>
           <button
             onClick={() => previousPage()}
             disabled={!canPreviousPage}
             className="rounded-md p-2  border border-gray-300 hover:bg-gray-200 active:bg-gray-400 disabled:bg-gray-300"
           >
+            <ArrowLeftIcon />
             Previous
           </button>
         </div>
@@ -139,7 +147,7 @@ const TableUI = ({usersData}: {usersData: DocumentData[]}) => {
                 : 0;
               gotoPage(pageNumber);
             }}
-            className="w-[75px] mx-3 border-1 border-blue-100 focus-visible:border-blue-800 focus-visible:bg-gray-100 outline-none rounded-md p-2 shadow-sm focus:shadow-lg"
+            className="w-[75px] mx-3 border-2 border-blue-100 focus-visible:border-blue-300 focus-visible:bg-gray-100 outline-none rounded-md p-2 shadow-sm focus:shadow-lg"
           />
           <select
             value={pageSize}
@@ -160,14 +168,14 @@ const TableUI = ({usersData}: {usersData: DocumentData[]}) => {
             disabled={!canNextPage}
             className="rounded-md p-2  border border-gray-300 hover:bg-gray-200 active:bg-gray-400 disabled:bg-gray-300"
           >
-            Next
+            Next <ArrowRightIcon />
           </button>
           <button
             onClick={() => gotoPage(pageCount - 1)}
             disabled={!canNextPage}
             className="rounded-md p-2  border border-gray-300 hover:bg-gray-200 active:bg-gray-400 disabled:bg-gray-300 ml-2"
           >
-            {'>>'}
+            <ArrowDoubleRightIcon />
           </button>
         </div>
       </div>

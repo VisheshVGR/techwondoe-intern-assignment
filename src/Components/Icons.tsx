@@ -9,7 +9,7 @@ const DownArrowIcon = () => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-4 h-4 inline-block ml-1"
+        className="w-4 h-4 mb-1 stroke-2  inline-block ml-1"
       >
         <path
           strokeLinecap="round"
@@ -141,6 +141,90 @@ const DownloadIcon = () => {
   );
 };
 
+const ArrowRightIcon = () => {
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-4 h-4 mb-1 stroke-2  inline-block ml-1"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+        />
+      </svg>
+    </>
+  );
+};
+
+const ArrowDoubleRightIcon = () => {
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-4 h-4 mb-1 stroke-2  inline-block"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </>
+  );
+};
+
+const ArrowLeftIcon = () => {
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-4 h-4 mb-1 stroke-2  inline-block mr-1"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+        />
+      </svg>
+    </>
+  );
+};
+
+const ArrowDoubleLeftIcon = () => {
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-4 h-4 mb-1 stroke-2  inline-block"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
+        />
+      </svg>
+    </>
+  );
+};
+
 export {
   DownloadIcon,
   AddIcon,
@@ -149,4 +233,8 @@ export {
   DownArrowIcon,
   DeleteIcon,
   EditIcon,
+  ArrowDoubleLeftIcon,
+  ArrowDoubleRightIcon,
+  ArrowLeftIcon,
+  ArrowRightIcon,
 };
