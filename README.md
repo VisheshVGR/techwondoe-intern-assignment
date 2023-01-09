@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+# Techwondoe Intern Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[GitHub Link](https://github.com/VisheshVGR/techwondoe-intern-assignment) | [See live](https://techwondoe-intern-assignment.vercel.app/)
 
-## Available Scripts
+## Table of Contents 📕
 
-In the project directory, you can run:
+- [Techwondoe Intern Assignment](#techwondoe-intern-assignment)
+  - [Table of Contents 📕](#table-of-contents-)
+  - [About the Challenge](#about-the-challenge)
+  - [Tools and Technology](#tools-and-technology)
+  - [Features](#features)
+  - [Gallery](#gallery)
+  - [Database Schema](#database-schema)
 
-### `npm start`
+## About the Challenge
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Challenge Link](https://raw.githubusercontent.com/VisheshVGR/techwondoe-intern-assignment/main/Gallery/Assignment.pdf)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Functional requirement.
+  - Develop a web application that pulls data from a user API and shows it in a table that looks like the above.
+  - Any Mock User API can be used. Jsonplaceholder can be used.
+  - The following functionalities are required-
+    - Create User (A modal can be used for this and edit functionality).
+    - List users with sorting and pagination.
+    - Delete user.
+    - Edit user - Can edit name and role.
+  - Last login field will come as a String from API in [https://www.rfc-editor.org/rfc/rfc3339](https://www.rfc-editor.org/rfc/rfc3339) format.
+  - The following UI components should be there-
+    - Badge (For status).
+    - Button component.
+    - Pagination.
+  - Ignore the checkbox in each row. It is not required.
+- Non-Functional.
+  - Must be completely typescript.
+  - Follow google typescript linting guidelines and configure [https://github.com/google/gts](https://github.com/google/gts). Configure linter accordingly.
+    - yarn lint command must check compliance.
+  - Use React Query for API queries.
+  - Add custom readme in the repo.
+- Optionals.
+  - Ability to download CSV.
+  - Use Tailwind CSS for styling, but quite preferred.
+  - Use of React table.
+  - Confirmation modal on deleting user.
+- [Design Template](https://raw.githubusercontent.com/VisheshVGR/techwondoe-intern-assignment/main/Gallery/Challenge.png).
 
-### `npm test`
+## Tools and Technology
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- The Front-end is created in **React.js** and **TailWind CSS**.
+- For creating Back-end, we used **Firebase**. For the database, we used Google Firestore. We created a very flexible and versatile foundation for our codebase, so that in the future its functionality could be easily extended and new agents could be easily added to it.
+- For the hosting we used **Vercel** which is a cloud platform that enables developers to host websites and web services that deploy instantly, scale automatically, and require no supervision.
+- All technologies-
+  - [ReactJS + TypeScript](https://create-react-app.dev/docs/adding-typescript/).
+  - [Google GTS (TypeScript ESLint + Prettier)](https://github.com/google/gts).
+  - [React Tables](https://react-table-v7.tanstack.com/).
+  - [React Query](https://react-query-v3.tanstack.com/).
+  - [TailWind CSS](https://tailwindcss.com/).
+  - [Tailwind Headless UI](https://headlessui.com/).
+  - [Firebase Firestore Database](https://firebase.google.com/docs/firestore).
+  - [Random User Generator](https://randomuser.me/).
+  - [React Router Dom](https://reactrouter.com/en/main).
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- All Data is live-fetched and updated improving user experience.
+- This is a single-page website with no refresh on page change enhancing page load speed.
+- When adding new user, random user data is fetched from [https://randomuser.me/api/](https://randomuser.me/).
+- Data displayed using React Table with features like-
+  - Sorting.
+  - Search / Filter.
+  - Pagination.
+  - Jump to page.
+- User details can be edited and users can be deleted.
+- All data can be downloaded in CSV / Excel format.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Gallery
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+|                                                                                                                                                                               |                                                                                                                                                                         |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|            <img width="1604" alt="Home Page" src="https://raw.githubusercontent.com/VisheshVGR/techwondoe-intern-assignment/main/Gallery/HomePage.png"> Home Page             |  <img width="1604" alt="Add User Modal" src="https://raw.githubusercontent.com/VisheshVGR/techwondoe-intern-assignment/main/Gallery/AddUserModal.png"> Add User Modal   |
+| <img width="1604" alt="Delete User Modal" src="https://raw.githubusercontent.com/VisheshVGR/techwondoe-intern-assignment/main/Gallery/DeleteUserModal.png"> Delete User Modal | <img width="1604" alt="Edit User Modal" src="https://raw.githubusercontent.com/VisheshVGR/techwondoe-intern-assignment/main/Gallery/EditUserModal.png"> Edit User Modal |
 
-### `npm run eject`
+## Database Schema
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img height="500px" alt="Database Schema" src="https://raw.githubusercontent.com/VisheshVGR/techwondoe-intern-assignment/main/Gallery/DbSchema.png">
